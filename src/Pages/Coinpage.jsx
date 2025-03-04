@@ -8,7 +8,7 @@ import CoinInfo from '../Components/CoinInfo';
 import {makeStyles} from '@mui/styles'
 import { Typography,LinearProgress } from '@mui/material';
 import { addCommas } from '../Components/Banner/Carousel';
-import ReactHtmlParser from 'react-html-parser';
+import parse from 'html-react-parser';
 
 
 
@@ -171,7 +171,7 @@ function Coinpage() {
           <Typography variant='subtitle1' className={classes.description}>
               {coin?.description?.en
 
-              ?`${ReactHtmlParser(coin?.description?.en.split('.')[0])}.`
+              ?`${parse(coin?.description?.en.split('.')[0])}.`  // ✅ Updated usage
               :  'No description available.'}
           </Typography>
 

@@ -16,6 +16,7 @@
     "@mui/material": "^6.4.6",
     "@mui/styles": "^6.3.1",
     "@mui/system": "^6.4.6",
+    "axios": "^1.8.1",
     "chart.js": "^4.4.7",
     "html-react-parser": "^5.2.2",
     "pure-react-carousel": "^1.32.0",
