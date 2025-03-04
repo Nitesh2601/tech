@@ -118,15 +118,18 @@ const CoinInfo = ({coin}) => {
 
   // console.log("this are the prices",historicData);
 
+  // useEffect(() => {
+    
+  //   fetchhistoricData();
+
+  // }, [currency,days]);
+
+
   useEffect(() => {
-
-    
-    
-    fetchhistoricData();
-
-   
-
-  }, [currency,days]);
+    if (coin?.id) { // Ensure coin ID exists before fetching
+      fetchhistoricData();
+    }
+  }, [coin?.id, currency, days]);
   
 
   const darkTheme = createTheme({

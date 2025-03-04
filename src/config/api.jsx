@@ -13,10 +13,4 @@ export const CoinList = (currency) =>
 
 
 
-  export const BinanceHistoricalChart = (symbol, interval, startTime, endTime, limit = 100) => {
-    let url = `https://api.binance.com/api/v3/klines?symbol=${symbol}&interval=${interval}&limit=${limit}`;
-    if (startTime) url += `&startTime=${startTime}`;
-    if (endTime) url += `&endTime=${endTime}`;
-    return url;
-  };
   
