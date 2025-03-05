@@ -1,5 +1,6 @@
 {
-    "routes": [
-      { "src": "/(.*)", "dest": "/index.html" }
+    "rewrites": [
+      { "source": "/coins/:id", "destination": "/index.html" },
+      { "source": "/(.*)", "destination": "/index.html" }
     ]
   }
